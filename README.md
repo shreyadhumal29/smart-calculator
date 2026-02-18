@@ -1,26 +1,32 @@
- 🧮 Smart Calculator
+  print("Welcome to Smart Calculator")
 
-A simple command-line calculator built using Python.
+while True:
+    print("\nChoose operation:")
+    print("1. Add")
+    print("2. Subtract")
+    print("3. Multiply")
+    print("4. Divide")
+    print("5. Exit")
 
-## 🚀 Features
-- ➕ Addition
-- ➖ Subtraction
-- ✖️ Multiplication
-- ➗ Division
-- 🔁 Loop-based menu system
+    choice = input("Enter choice (1-5): ")
 
-## ▶️ How to Run
+    if choice == '5':
+        print("Goodbye 👋")
+        break
 
-1. Make sure Python is installed
-2. Download the file
-3. Open terminal in the folder
-4. Run:
+    num1 = float(input("Enter first number: "))
+    num2 = float(input("Enter second number: "))
 
-python calculator.py
-
----
-
-## 👩‍💻 Author
-Shreya
-
-✨ First Python Project
+    if choice == '1':
+        print("Result:", num1 + num2)
+    elif choice == '2':
+        print("Result:", num1 - num2)
+    elif choice == '3':
+        print("Result:", num1 * num2)
+    elif choice == '4':
+        if num2 != 0:
+            print("Result:", num1 / num2)
+        else:
+            print("Cannot divide by zero")
+    else:
+        print("Invalid choice")
