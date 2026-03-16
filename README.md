@@ -1,32 +1,15 @@
-  print("Welcome to Smart Calculator")
+  # Python Calculator 🧮
 
-while True:
-    print("\nChoose operation:")
-    print("1. Add")
-    print("2. Subtract")
-    print("3. Multiply")
-    print("4. Divide")
-    print("5. Exit")
+This is a simple calculator program developed using Python.  
+It performs basic arithmetic operations like addition, subtraction, multiplication, and division.
 
-    choice = input("Enter choice (1-5): ")
+## Features
+- Easy to use
+- Performs basic calculations
+- Beginner-friendly Python project
 
-    if choice == '5':
-        print("Goodbye 👋")
-        break
+## Technology Used
+- Python
 
-    num1 = float(input("Enter first number: "))
-    num2 = float(input("Enter second number: "))
-
-    if choice == '1':
-        print("Result:", num1 + num2)
-    elif choice == '2':
-        print("Result:", num1 - num2)
-    elif choice == '3':
-        print("Result:", num1 * num2)
-    elif choice == '4':
-        if num2 != 0:
-            print("Result:", num1 / num2)
-        else:
-            print("Cannot divide by zero")
-    else:
-        print("Invalid choice")
+## Author
+Shreya Dhumal
